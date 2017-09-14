@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)file:///D:/_git/CV/index_template.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <title>刘博文简历</title>
-    <link rel="stylesheet" href="./index_files/style.css">
-    <link rel="stylesheet" href="./index_files/remodal.css">
-    <link rel="stylesheet" href="./index_files/remodal-default-theme.min.css">
-    <script src="./index_files/jquery.min.js.下载"></script>
-    <script src="./index_files/remodal.min.js.下载"></script>
-    <script src="./index_files/script.js.下载"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
 </head>
 
 <body>
@@ -16,189 +17,355 @@
         <div class="side">
             <div class="me">
                 <div class="portrait"></div>
-                
-                <h1 id="username" contenteditable="true">刘博文</h1>
-                <h4 id="persona-tag" contenteditable="true">Java / Web / 互联网</h4>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >刘博文</h1>
+                <h4 id="persona-tag" >Java / Web / 互联网</h4>
             </div>
             <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title" contenteditable="true">基本信息</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">刘博文</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">姓名</label><span class="label-value">刘博文</span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">本科</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">北京交通大学</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">毕业院校</label><span class="label-value">北京交通大学</span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2006<br></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2006</span></li>
                 </ul>
             </div>
             <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">13651301931</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">手机</label><span class="label-value">13651301931</span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">hyy80488@163.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">邮箱</label><span class="label-value">hyy80488@163.com</span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">个人主页</label><span class="label-value" contenteditable="true"></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">个人主页</label><span class="label-value"></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">Github</label><span class="label-value" contenteditable="true">github.com/hyy80488</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/hyy80488</span></li>
                 </ul>
             </div>
             <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title" contenteditable="true">技能点</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
                 <hr>
                 <ul class="progress-list">
                     <li>
-                        <label class="left-label" contenteditable="true">Java</label>
+                        <label class="left-label">Java</label>
+                        <progress value="95" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">分布式</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">性能优化</label>
                         <progress value="80" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    </li>
                     <li>
-                        <label class="left-label" contenteditable="true">分布式</label>
+                        <label class="left-label">中间件</label>
                         <progress value="70" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">性能优化</label>
-                        <progress value="60" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">中间件</label>
-                        <progress value="60" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    </li>
                 </ul>
             </div>
             <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title" contenteditable="true">技术栈</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label" contenteditable="true">前端</label><span class="label-value" contenteditable="true">jQuery、Angular.js、React.js</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js...</span></li>
+                    </li>
                     <li>
-                        <label class="left-label" contenteditable="true">后端</label><span class="label-value" contenteditable="true">Flask、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
+                        <label class="left-label">后端</label><span class="label-value">Spring Cloud、Dubbo-x、Node.js、MongoDB、MySQL、Redis、RabbitMq、ElasticSearch...</span></li>
+                    </li>
                     <li>
-                        <label class="left-label" contenteditable="true">其它</label><span class="label-value" contenteditable="true">我全都是瞎写的。</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
+                        <label class="left-label">其它</label><span class="label-value">Shell、Python、XDiamond、Elastic-Job、Jenkins...</span></li>
+                    </li>
                 </ul>
             </div>
 
             <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title" contenteditable="true">个人微信</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
                 <hr>
                 <div class="weixin">
-                    <img src="./index_files/weixin.png" alt="">
-
+                    <img src="static/image/weixin.png" alt="">
                 </div>
             </div>
-            
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
         </div>
         <div class="main">
             <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3 contenteditable="true">北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>北京交通大学 - 软件工程（本科）2002-2006【全日制】</h3>
+                    </li>
+                    <li>
+                        <h3>北京交通大学 - 软件工程（硕士）2010-2012【在职】</h3>
+                    </li>
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3 contenteditable="true">北京创客空间－实习生（实习）</h3>
-                        <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>北京众荟信息技术股份有限公司 | 架构师 | 2016/09 -- 至今</h3>
+                        <p>互联网/电子商务 | 上市公司 | 2000-3000人| 32000元/月*14个月/年</p>
+                        <p>1、完成新产品的技术研判和选型；</p>
+                        <p>2、完成分布式框架【高可用、高并发、组件化】的设计、搭建、测试工作；</p>
+                        <p>3、带领团队完成代码生成工具的设计、开发和CDI（代码走查）的工作；</p>
+                        <p>4、制定开发规则、编写范例代码；</p>
+                        <p>5、完成产品核心算法（价格算法、合住算法、房量算法）和核心功能（预定入住）；</p>
+                        <p>6、生产环境Tomcat、Redis、MQ等调优，线上操作与线上问题排查，搭建相应监控平台；</p>
+                        <p>7、JVM调优，生产环境JVM问题跟踪定位（jstack、jconsole、Eclipse Memory Analysis Tools (MAT)、jvisualvm)；</p>
+                        <p>8、对公司非JAVA开发的同事进行JAVA培训。</p>
+                        <p></p>
+                        <p>分布式、组件化、高可用、高并发、横向扩展、服务独立自治、最大健壮性的微服务框架，主要技术点包括：</p>
+                        <p>1、Mysql-MMM（Master-Master Replication Manager for MySQL主主复制），故障切换、一主多从、读写分离、从库轮询调用；PostgreSQL一主多从、读写分离、从库轮询调用、双机热备（pacemaker和corosync组件）</p>
+                        <p>2、DataSource动态切换</p>
+                        <p>3、含补偿机制的最终一致性分布式事务处理</p>
+                        <p>4、分库数据整合（ETL） + 异构数据库/文件系统之间高速交换数据工具：DataX</p>
+                        <p>5、CAT(Central Application Tracking)实时监控平台</p>
+                        <p>6、全文检索服务：ElasticSearch集群</p>
+                        <p>7、分布式配置管理：XDiamond</p>
+                        <p>8、Spring Cloud Config+Spring Cloud Bus【配置内容实时更新】、Spring Cloud Netflix【Eureka、Hystrix、Zuul、Ribbon、Feign】、Spring Cloud Sleuth+zipkin+mq+ES【分布式跟踪】、Spring Cloud Security【授权服务】、Spring Boot Admin【健康监控】</p>
+                        <p>9、分布式服务监控：Dubbo-monitor-x</p>
+                        <p>10、分布式事务治理：Dubbo-x</p>
+                        <p>11、分布式缓存【NOSQL】：Redis集群、Memcached集群【一致性哈希】、MongoDB集群；分布式主键自增生成服务：Snowflake算法；Redis分布式锁</p>
+                        <p>12、分布式消息中间件技术：RabbitMq集群、ActiveMQ、Kafka、RocketMQ</p>
+                        <p>13、轻量级分布式文件系统：FastDFS集群 + Nginx反向代理+SSL</p>
+                        <p>14、分布式开源调度框架：TBSchedule、Elastic-Job</p>
+                        <p>15、分布式链路跟踪系统：统一TraceID日志打点</p>
+                        <p>16、Otter分布式数据同步：基于Canal获取数据库增量日志数据</p>
+                        <p>17、安全框架：Shiro + Oauth2</p>
+                        <p>18、校验封装：Spring Validation + Hibernate Validation + Bean Validation的重写</p>
+                        <p>19、日志封装（logback）、日志收集、加载检索：Flume-ng + ElasticSearch + Kibana</p>
+                        <p>20、持久化层框架：Hibernate、Mybatis</p>
+                        <p>21、数据库连接池：Druid</p>
+                        <p>22、前端框架及相关技术：React2、AngularJS、Ajax、Jquery、EasyUI、Ext3、Bootstrap、Html5</p>
+                        <p>23、埋点服务（用户操作日志、PV、UV、登录注销日志），长链接转换短链接服务</p>
+                        <p>24、推送技术：长连接（Websocke服务）</p>
+                        <p>25、高并发保护/防雪崩技术：流量控制、熔断器组件、黑白名单、缓存、服务降级</p>
+                        <p>26、报表定义系统、自定义报表封装（JasperReport + ireport） 、 ECharts后端接口封装</p>
+                        <p>27、帮助中心：CMS后台管理 + 在线编辑器 + FreeMarker静态化发布 + Lucene全文检索</p>
+                        <p>28、国际化，多语种，多币种技术</p>
+                        <p>29、异常封装（自定义异常，统一抛出捕获，自定义Dubbo异常）</p>
+                        <p>30、敏感信息处理（身份证号\信用卡号\手机号等），数据库加密、显示加密、日志敏感信息监控</p>
+                        <p>31、重复提交处理（自定义注解、token验证）</p>
+                        <p>32、Session共享（redis、线程ThreadLocal）</p>
+                        <p>33、分布式版本控制：Git；文档版本控制：SVN</p>
+                        <p>34、项目与事务跟踪：JIRA</p>
+                        <p>35、企业知识管理与协同：Confluence</p>
+                        <p>36、数据建模工具：ERWin、PowerDesigner</p>
+                        <p>37、持续集成与自动化部署：Maven、Nexus、Git、Jenkins、Shell、Pm2、Docker、回退演习、故障演练</p>
+                        <p>38、自动化测试（无感知回归\增量）：Selenium + Python（并行）、灰度发布（Nginx + Shell）、Postman（接口测试）、Appium（App端自动化测试）</p>
+                        <p>39、性能测试：JMeter（数据库压测、接口压测）、Loadrunner分布式压测</p>
+                        <p>40、统一代码注释及copyright（JavaDoc + Markdown）</p>
+                        <p>41、代码检查：checkstyle、Findbug</p>
+                        <p>42、代码自动生成：FreeMarker（模板引擎）</p>
+                    </li>
                     <li>
-                        <h3 contenteditable="true">实验楼－课程内容（实习）</h3>
-                        <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
+                        <h3>北京数码易知科技发展有限责任公司 | CTO、架构师 | 2013/06 -- 2016/09</h3>
+                        <p>计算机软件 | 股份制企业 | 100-499人 | 30000元/月*14个月/年</p>
+                        <p>1) 负责CCS顶层设计的咨询与规划，针对现有几十个系统进行整合，并规划后续系统及其架构；</p>
+                        <p>2) 负责实施搭建高并发高可用电商平台（B2B）架构，借鉴成熟架构，结合公司实际和知识积累，提供平台级服务；</p>
+                        <p>3) 负责技术规范编制和修订，包括：界面规范、安全规范、数据库规范、编码开发规范、接口规范、PORTAL和ESB集成要求、Android开发规范、IOS开发规范、测试规范，并参与公司其他制度体系的制定；</p>
+                        <p>4) 参与重大项目的项目群管理，并带领技术支持组负责相应技术支持（如核心业务系统SSMIS、SAMIS、PSMIS、DSMIS、OEMIS、OA、CRM、知识中心、对外服务，移动项目、集成项目等）；</p>
+                        <p>5) 负责新技术架构，如nodejs、bootstrap、hadoop（YARM）、spark（Spark SQL、Spark Streaming、MLlib、GraphX）等在现有架构中的融合；负责关键技术攻关与知识积累、培训应用，如CDN（Nginx）、Bootstrap + Html5 + CSS3、埋点上报、Shiro + Oauth2、Dubbo + Kryo + Zookeeper、Druid + Mybatis、数据库分库分表Mycat集群、DataSource动态切换（重写determineCurrentLookupKey方法）、分布式多数据源强一致性事务处理（Spring JTA + JOTM + XAPOOL）、全文检索服务（SolrCloud）、报表BIRT封装、Flum-ng + Kafka、Redis、mysql集群等；</p>
+                        <p>6) 负责公司基础平台、产品平台的架构设计，持续改进完善，新架构新技术可行性研究；</p>
+                        <p>7) 负责所有项目的技术方案审核评审，概要设计、详细设计，UI设计，接口设计，数据库设计评审，及执行监管；</p>
+                        <p>8) 负责公司技术委员会的相关事务管理，进行中项目质量管理，代码走查抽查等； 负责各运维项目、开发项目、产品项目的重大技术故障点的监控、跟踪、解决 ；</p>
+                        <p>9) 指导项目需求分析师，系统分析与设计师，中高级软件开发工程师，UI设计师工作，对公司所有技术岗员工进行培训，提高员工工作效率、敬业精神、服务意识 ；完成上级交给的其它事务性工作，和技术部分面试招聘工作；</p>
+                        <p>10) 生产环境Tomcat、Redis、MQ等调优，线上操作与线上问题排查，搭建相应监控平台；JVM调优，生产环境JVM问题跟踪定位（jstack、jconsole、Eclipse Memory Analysis Tools (MAT)）。</p>
+                    </li>
+                    <li>
+                        <h3>中科软科技股份有限公司 | 项目总监 | 2006/07 -- 2013/05</h3>
+                        <p>计算机软件 | 上市公司 | 2000-3000人 | 22000元/月*14个月/年</p>
+                        <p>负责协调管理部门各个项目，统筹管理项目进度，项目成本，及人员配备。</p> 
+                        <p>负责部门各个项目的技术支持、业务支持、管理支持。 </p>
+                        <p>负责部门自有系统的架构设计。  </p>
+                        <p>负责配合商务完成部门业务扩展、及招投标技术部分。 </p>
+                        <p>负责对重点项目管理工作，对500万以上的纯软件项目，公司重点扶持项目驻场管理。</p>
+                        <p>负责人员招聘中技术方面的面试工作。</p>
+                    </li>
+                </ul class="experience-list">
             </div>
             <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">个人项目</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">项目经验</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3 contenteditable="true">基于 Qt 5 的文本编辑器</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br>
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>CRS中央预订系统 + 服务购买平台 + 云服务平台</h3>
+                        <p>软件环境：Nginx、Tomcat、PostgreSQL、Zookeeper、Dubbo-monitor-x、Spring-Cloud-Monitor、Redis、XDiamond、DataX、RabbitMq、FastDFS、TBSchedule、Canal、Otter、Flume-ng 、ELK、Nodejs、SpringMvc+ Mybatis+Hibernate</p>
+                    		<p>硬件环境：租赁阿里云服务</p>
+                    		<p>开发工具： Eclipse -neon\ IntelliJ2017 + Jetty\Tomcat</p>
+                    		<p>责任描述：</p>
+                    		<p>1、完成新产品的技术研判和选型；</p>
+                    		<p>2、完成分布式框架的设计、搭建、测试工作；</p>
+                    		<p>3、带领团队完成代码生成工具的设计、开发和CDI的工作；</p>
+                    		<p>4、制定开发规则、编写范例代码；</p>
+                    		<p>5、完成产品核心算法（价格算法、合住算法、房量算法）和核心功能（预定入住）；</p>
+                    		<p>6、对公司非JAVA开发的同事进行JAVA培训。</p>
+                    </li>
                     <li>
-                        <h3 contenteditable="true">基于 Flask 的主机监视系统</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>船用采购电子商务平台(船链网)</h3>
+                        <p>软件环境：Nginx、Tomcat、mysql（MMM故障切换+日常管理）一主多从\读写分离\从库轮询调用\双主复制、Zookeeper、Dubbo-monitor、Redis、Mycat、Nodejs、Kafka、Flume-ng、ELK、SpringMvc+ Mybatis、Solr</p>
+                        <p>硬件环境：租赁阿里云服务</p>
+                        <p>开发工具：EclipseM2\ Intellij + Jetty</p>
+                        <p>责任描述：</p>
+                        <p>1、负责借鉴现有市场中成熟高并发高可用的电商平台架构，结合公司实际和知识积累，规划设计、实施搭建一套全新架构，供平台及后续增值服务使用。 </p>
+                        <p>2、负责其中关键技术点的攻关，使用到的关键技术的实践和调优，如Nginx、Bootstrap + Html5 + CSS3、埋点、nodejs、Shiro + Oauth2、Dubbo + Zookeeper、Druid、Mybatis、Mycat、Kafka、Flum-ng、Redis、mysql等。 </p>
+                        <p>3、负责完成相应开发示例，后续开发过程中，做技术指导。</p>
+                    </li>
                     <li>
-                        <h3 contenteditable="true">基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    <span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>CCS船舶服务管理系统(4000万纯软件系统，项目团队超百人)</h3>
+                        <p>软件环境：Mysql5.6 + Oracle12c、Weblogic、Nginx + Varnish、Nodejs、Zookeeper、Dubbo-monitor、Mongodb、Activemq、Flume-ng 、ELK、SpringMvc+ Mybatis</p>
+                        <p>硬件环境：Oracle Exadata一体机</p>
+                        <p>开发工具：Eclipse\ Intellij + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>1、负责项目前期预研，可行性分析，用户及角色分析，项目需求及分析，并对系统的总体架构、应用架构、数据架构、部署及安全架构、技术架构等内容作了深入分析和研究；</p>
+                        <p>2、负责系统实施计划的规划与制定（分布迭代）；</p>
+                        <p>3、负责A1至A9 + B1，共计10个子项目的按计划建设上线；（A1系统访问控制及技术组件平台、A2船舶数字模型项目、A3综合管理、基础信息、数据分析和数据迁移项目、A4审图业务流程项目、A5产品检验业务流程项目、A6建造检验项目、A7营运检验业务流程和数据交换项目、A8桌面应用及其接入开发项目、A9外部测试项目、B1移动端及其接入开发项目）</p>
+                    </li>
                     <li>
-                        <h3 contenteditable="true">如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <h3>系统整合项目，及移动应用平台开发项目</h3>
+                        <p>软件环境：SMP、ESB、IBM SSO、IBM PORTAL、HAProxy、Tomcat、Oracle、Zookeeper、Dubbo-monitor、S2SH</p>
+                        <p>硬件环境：IBM 3650</p>
+                        <p>开发工具：Eclipse + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>1、结合行业业务、现行系统、现存问题、及未来发展，参考政府相关组织信息化框架、相关客户公司信息化框架、竞争对手信息化框架，进行顶层规划；</p>
+                        <p>2、负责现行80余个系统分析、以及整合后10 + X系统设计；</p>
+                        <p>3、负责服务总线架构设计搭建； </p>
+                        <p>4、负责统一单点登录和内外门户portal搭建；</p>
+                        <p>5、负责移动架构的预研、选型、立项、实施工作；</p>
+                        <p>6、负责项目管理工作；</p>
+                        <p>7、负责项目技术监督指导工作；</p>
+                        <p>8、负责项目架构设计，系统设计工作；</p>
+                        <p>9、负责其核心模块编写；</p>
+                    </li>
+                    <li>
+                        <h3>科技管理信息系统（知识中心）</h3>
+                        <p>软件环境：HAProxy、Mysql、Websphere、Zookeeper、Dubbo-monitor、SpringMvc+ Mybatis</p>
+                        <p>硬件环境：小型机</p>
+                        <p>开发工具：Eclipse + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>1、负责知识中心架构的搭建。 </p>
+                        <p>2、负责项目前期预研、立项调研、及立项报告书写。 </p>
+                        <p>3、负责整个项目的管理工作。 </p>
+                        <p>4、负责项目方案制定，及系统分析与设计。 </p>
+                        <p>5、负责项目架构设计、总体设计、接口设计。 </p>
+                        <p>6、负责项目数据库设计，及核心代码书写。</p>
+                    </li>
+                    <li>
+                        <h3>客户关系管理系统（CRM）</h3>
+                        <p>软件环境：HAProxy、Weblogic10.3、Oracle11、Zookeeper、Dubbo-monitor、S2SI</p>
+                        <p>硬件环境：IBM 3850</p>
+                        <p>开发工具：Myeclipse 8.5+ Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>1、负责项目前期预研、立项调研、及立项报告书写。</p>
+                        <p>2、负责整个项目的管理工作。</p>
+                        <p>3、负责项目方案制定，及系统分析与设计。</p>
+                        <p>4、负责项目架构设计、总体设计、接口设计。</p>
+                        <p>5、负责项目数据库设计，及核心代码书写。</p>
+                    </li>
+                    <li>
+                        <h3>国库支付系统、外围平台升级完善-ERP系统升级改造项目，以及外围平台国产化</h3>
+                        <p>软件环境：Oracle EBS、Apache HTTP Server、Tomcat、Oracle、S2SH</p>
+                        <p>硬件环境：IBM P系列 、HP PA</p>
+                        <p>开发工具：Oracle Devloper 、PLSQL、Eclipse + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>1、负责国库收付系统、外围平台升级完善-ERP系统升级改造，承担项目经理（项目团队管理、协调）、部分技术开发（核心功能客户化升级改造）、功能顾问（业务功能测试）、业务顾问（国库收付业务梳理）职责。</p>
+                        <p>2、作为公司重点扶持项目，和合同额比较大的项目，负责驻场参与项目管理工作（项目团队管理、各个项目干系人之间协调）。</p>
+                        <p>3、负责技术方案的制定，监控技术实施，并参与相关实施。</p>
+                        <p>4、负责项目进行过程中技术攻关，技术难题解决（技术顾问）</p>
+                        <p>5、负责业务功能测试、监管工作，确保测试到位、全面、准确。（功能顾问）</p>
+                        <p>6、负责国库业务全业务梳理。（业务顾问）</p>
+                    </li>
+                    <li>
+                        <h3>天津出入境检验检疫局集中数据监控运维管理中心建设项目</h3>
+                        <p>软件环境：Kingdee Middleware、ETL、Apache HTTP Server、Tomcat、Oracle、S2SH</p>
+                        <p>硬件环境：IBM 3850</p>
+                        <p>开发工具：JBuilder 2008 + Jboss</p>
+                        <p>责任描述：</p>
+                        <p>负责项目业务方案、技术方案的制定。</p>
+                        <p>负责同公司平台组技术沟通，平台定制改造工作。</p>
+                        <p>负责同项目相关第三方厂商、客户各个处室、公司各个部门间的协调。</p>
+                    </li>
+                    <li>
+                        <h3>国际航行船舶电讯检验检疫系统</h3>
+                        <p>软件环境：Apache HTTP Server、Websphere、Oracle、SSH、GIS</p>
+                        <p>硬件环境：Inspur TS850</p>
+                        <p>开发工具：Myeclipse 6.5 + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>由于项目严重超期，特加入其中，促使其尽快结束后期工作，控制客户无尽的需求蔓延，搞好客户关系，安抚客户情绪，同时稳定项目组，以求尽快验收。</p>
+                    </li>
+                    <li>
+                        <h3>金质工程（一期）国家强制性产品认证监督管理系统</h3>
+                        <p>软件环境：BO(Business Object)、Apache HTTP Server、Tomcat、Oracle、SSH</p>
+                        <p>硬件环境：Dell PowerEdge R910</p>
+                        <p>开发工具：UniEAP(Neusoft) + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>负责基于非公司平台技术把控，技术沟通。</p>
+                        <p>负责总体技术方案制定。</p>
+                        <p>负责项目总体进度管理。</p>
+                    </li>
+                    <li>
+                        <h3>中国邮政综合办公信息处理平台 + 中国气象局办公处理平台 + 某部委部BI项目</h3>
+                        <p>软件环境：Oracle10g、Weblogic9、Apache HTTP Server、Tomcat、Oracle、SSH</p>
+                        <p>硬件环境：hp superdome + IBM X3850 (双机)</p>
+                        <p>开发工具：Eclipse + Tomcat</p>
+                        <p>责任描述：</p>
+                        <p>中国邮政综合办公信息处理平台</p>
+                        <p>负责针对大用户访问量、大业务操作量的全国大集中项目设计架构，制定技术方案。</p>
+                        <p>负责协调各方技术，进行技术攻关。</p>
+                        <p>负责同项目各个第三方协调沟通方式、系统接口等。</p>
+                        <p>负责项目整体进度把控，协调好各方项目干系人。</p>
+                        <p>负责项目管理，包括：范围管理、时间管理、成本管理、质量管理、人力资源管理、沟通管理、采购管理、风险管理、整体管理等，以及部分核心开发。</p>
+                        <p>负责技术方案的讨论制定。</p>
+                        <p>负责代码走查、单元测试等工作。</p>
+                    </li>
                 </ul>
             </div>
             <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title" contenteditable="true">奖项与证书</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3 contenteditable="true">小学生作文二等奖</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li> 
-                    <li>
-                        <h3 contenteditable="true">曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    <span class="item-remove"><i class="iconfont icon-delete"></i></span></li> 
-                    <li>
-                        <h3 contenteditable="true">这一行也是为了凑版面</h3>
-                        <p contenteditable="true">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    <span class="item-remove"><i class="iconfont icon-delete"></i></span></li>                     
-            </ul></div>
+                        <h3>2011/09 oracle ocp 证书</h3>
+                        <p><img src="static/image/ocp.png" alt=""></p>
+                    </li>
+                </ul>
+            </div>
             <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
                 <hr>
-                <p contenteditable="true">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>统招软件工程专业毕业，毕业后进修了软件工程硕士和Oracle OCP等。</p>
+                <p>Java技术出身，历经技术经理、项目经理、项目总监、CTO，最终选择架构师之路。</p>
+                <p>10年工作经验，坚持亲自去写核心代码、Code Review，以及研发工作，技术管理三七开。</p>
+                <p>熟悉高并发、高可用JAVA分布式云平台架构，经历过多个大型项目洗礼。</p>
+                <p>了解大数据平台架构，项目中有一些大数据工具应用。</p>
+                <p>具有较强的学习能力，经过软件行业超过3万小时的锤炼，能较快的熟悉新技术并应用。</p>
+                <p>精力充沛，是同事眼中的工作狂人，工作以来，基本保持7*12的工作强度。</p>
+                <p>工作有条理，执行力强，效率高，可独立完成重大任务，同时善于发挥团队力量，增强团队凝聚力，注重团队成员培养，因才适用。</p>
+                <p>适应性强，有一定的应变能力，能够在高压下和时间限制下进行工作，善于面对问题，迎难而上，解决问题。</p>
             </div>
         </div>
     </div>
+</body>
 
-
-
-<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
-                    <h3 contenteditable="true">请输入图片URL地址：</h3>
-                    <br>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="weixin-modal" tabindex="-1">
-                <h3 contenteditable="true">请输入图片URL地址：</h3>
-                <br>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div></div></body></html>
+</html>
