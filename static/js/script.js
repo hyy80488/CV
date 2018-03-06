@@ -32,14 +32,14 @@ jQuery(document).ready(function($) {
 
     var portrait_modal = $('[data-remodal-id=portrait-modal]').remodal();
     $(".portrait").click(function(event) {
-        portrait_modal.open();
+        //portrait_modal.open();
     });
     $('[data-remodal-id=portrait-modal] button').click(function(event) {
         $(".portrait").css('background-image', 'url("{0}")'.format($("#avatar-url").val()));
     });
     var weixin_modal = $('[data-remodal-id=weixin-modal]').remodal();
     $(".weixin").click(function(event) {
-        weixin_modal.open();
+        //weixin_modal.open();
     });
     $('[data-remodal-id=weixin-modal] button').click(function(event) {
         $(".weixin img").attr('src', $("#weixin-url").val());
@@ -66,11 +66,11 @@ jQuery(document).ready(function($) {
     });
 
     $('.unit-remove').click(function(event) {
-        $(this).closest(".info-unit").remove();
+        //$(this).closest(".info-unit").remove();
     });
 
     $('.item-remove').click(function(event) {
-        $(this).closest("li").remove();
+        //$(this).closest("li").remove();
     });
 
     $('.item-add').click(function(event) {
@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
         if (unit.children('ul')){
             var list = unit.children('ul');
             var clone = list.children('li:first-child').clone(true);
-            list.append(clone);
+            //list.append(clone);
         }
 
     });
