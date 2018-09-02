@@ -405,52 +405,55 @@
                         <p>9、完成CDI（代码走查）的工作，对公司非JAVA开发的同事进行JAVA培训。</p>
                         <p></p>
                         <p>主要技术栈包括：</p>
-                        <p>1、Mysql-MMM（Master-Master Replication Manager for MySQL主主复制），故障切换、一主多从、读写分离、从库轮询调用；PostgreSQL一主多从、读写分离、从库轮询调用、双机热备（pacemaker和corosync组件）</p>
-                        <p>2、DataSource动态切换</p>
-                        <p>3、补偿机制的最终一致性分布式事务处理（状态机）</p>
-                        <p>4、分库数据整合（ETL） + 异构数据库/文件系统之间高速交换数据工具：DataX</p>
-                        <p>5、CAT(Central Application Tracking)实时监控平台</p>
-                        <p>6、智能检索服务：ElasticSearch集群</p>
-                        <p>7、分布式配置管理：XDiamond、Disconf、Qconf</p>
-                        <p>8、Spring Cloud：Config+Bus【配置内容实时更新】、Netflix【Eureka、Hystrix、Zuul、Ribbon、Feign】、Sleuth+zipkin+mq+ES【分布式跟踪】、Security【授权服务】、Boot-Admin【健康监控】</p>
-                        <p>9、分布式服务治理：Dubbo-x：注册、发现、路由、负载均衡、结果合并、拦截、监听、监控</p>
-                        <p>10、缓存：Redis集群、Memcached集群</p>
-                        <p>11、NOSQL：Zookeeper集群、MongoDB集群</p>
-                        <p>12、分布式主键自增生成服务：Snowflake算法</p>
-                        <p>13、分布式消息中间件技术：RabbitMq集群（可靠消息+延迟队列）、ActiveMQ、Kafka、RocketMQ</p>
-                        <p>14、轻量级分布式文件系统：FastDFS集群 + Nginx反向代理+SSL</p>
-                        <p>15、分布式调度中心：TBSchedule、Elastic-Job</p>
-                        <p>16、分布式链路跟踪系统：统一TraceID日志打点</p>
-                        <p>17、Otter分布式数据同步：基于Canal获取数据库增量日志数据</p>
-                        <p>18、安全框架：Shiro + Oauth2、、Spring Security</p>
-                        <p>19、校验封装：Spring Validation + Hibernate Validation + Bean Validation的重写</p>
-                        <p>20、日志封装（logback）、日志收集、加载检索：Flume-ng + ElasticSearch + Kibana</p>
-                        <p>21、持久化层框架：Hibernate、Mybatis</p>
-                        <p>22、数据库连接池：Druid、Hikari、C3P0、JNDI</p>
-                        <p>23、前端框架及相关技术：React2、AngularJS、Ajax、Jquery、EasyUI、Ext3、Bootstrap、Html5</p>
-                        <p>24、埋点服务（用户操作日志、PV、UV、登录注销日志），长链接转换短链接服务</p>
-                        <p>25、操作日志记录，操作画面恢复展示</p>
-                        <p>26、推送技术：长连接（Websocke服务）</p>
-                        <p>27、高并发保护/防雪崩技术：流量控制、熔断器组件、黑白名单、缓存、服务降级</p>
-                        <p>28、报表定义系统、自定义报表封装（JasperReport + ireport） 、 ECharts后端接口封装</p>
-                        <p>29、帮助中心：CMS后台管理 + 在线编辑器 + FreeMarker静态化发布 + Lucene全文检索</p>
-                        <p>30、国际化，多语种，多币种技术</p>
-                        <p>31、异常封装（自定义异常，统一抛出捕获，自定义Dubbo异常）</p>
-                        <p>32、乐观锁、悲观锁、分布式锁</p>
-                        <p>33、敏感信息处理：对称加密解密；密码信息处理：非对称加密；日志敏感信息监控</p>
-                        <p>34、重复提交处理（自定义注解、token验证）</p>
-                        <p>35、Session共享（redis、线程ThreadLocal）</p>
-                        <p>36、分布式版本控制：Git；文档版本控制：SVN</p>
-                        <p>37、项目与事务跟踪：JIRA</p>
-                        <p>38、企业知识管理与协同：Confluence</p>
-                        <p>39、数据建模工具：ERWin、PowerDesigner</p>
-                        <p>40、持续集成与自动化部署：Maven、Nexus、Git、Jenkins、Shell、Pm2、Docker、回退演习、故障演练</p>
-                        <p>41、自动化测试（无感知回归\增量）：Selenium + Python（并行）、灰度发布（Nginx + Shell）、Postman（接口测试）、Appium（App端自动化测试）</p>
-                        <p>42、性能测试：JMeter（数据库压测、接口压测）、Loadrunner分布式压测</p>
-                        <p>43、统一代码注释及copyright（JavaDoc + Markdown），接口自定义系统WEB API（结合Apidoc）</p>
-                        <p>44、代码检查：checkstyle、Findbug</p>
-                        <p>45、代码自动生成：FreeMarker（模板引擎）</p>
-                        <p>46、JavaEE开发工具：Eclipse\Intellij + Jrebel</p>
+                        <p>1、Mysql-MMM（Master-Master Replication Manager for MySQL主主复制），故障切换、一主多从、读写分离、从库轮询调用；PostgreSQL一主多从、读写分离、从库轮询调用、双延迟从库、双机热备（pacemaker和corosync组件）</p>
+												<p>2、DataSource动态切换</p>
+												<p>3、补偿机制的最终一致性分布式事务处理（状态机）</p>
+												<p>4、分库数据整合（ETL） + 异构数据库/文件系统之间高速交换数据工具：DataX</p>
+												<p>5、CAT(Central Application Tracking)实时监控平台</p>
+												<p>6、智能检索服务：ElasticSearch集群</p>
+												<p>7、分布式配置管理：XDiamond、Disconf、Qconf</p>
+												<p>8、Spring Cloud：Config+Bus【配置内容实时更新】、Netflix【Eureka、Hystrix、Zuul、Ribbon、Feign】、Sleuth+zipkin+mq+ES【分布式跟踪】、Security【授权服务】、Boot-Admin【健康监控】</p>
+												<p>9、微服务治理：Dubbo-x + Dubbo-admin：注册、发现、路由、负载均衡、结果合并、拦截、监听、监控</p>
+												<p>10、缓存：Redis集群、Memcached集群</p>
+												<p>11、NOSQL：Zookeeper集群、MongoDB集群</p>
+												<p>12、分布式主键自增生成服务：Snowflake算法</p>
+												<p>13、分布式消息中间件技术：RabbitMq集群（可靠消息+延迟队列）、ActiveMQ、Kafka、RocketMQ</p>
+												<p>14、轻量级分布式文件系统：FastDFS集群 + Nginx反向代理</p>
+												<p>15、分布式调度中心：TBSchedule、Elastic-Job</p>
+												<p>16、分布式链路跟踪系统：统一TraceID日志打点</p>
+												<p>17、微服务网管：Vert.x</p>
+												<p>18、Otter分布式数据同步：基于Canal获取数据库增量日志数据</p>
+												<p>19、安全框架：Shiro + Oauth2、Spring Security</p>
+												<p>20、校验封装：Spring Validation + Hibernate Validation + Bean Validation的重写</p>
+												<p>21、日志封装（logback）、日志收集、加载检索：Flume-ng + ElasticSearch + Kibana</p>
+												<p>22、持久化层框架：Hibernate、Mybatis</p>
+												<p>23、数据库连接池：Druid、Hikari、C3P0、JNDI</p>
+												<p>24、前端框架及相关技术：React2、AngularJS、Ajax、Jquery、EasyUI、Ext3、Bootstrap、Html5</p>
+												<p>25、埋点服务（用户操作日志、PV、UV、登录注销日志），长链接转换短链接服务</p>
+												<p>26、操作日志记录，操作画面恢复展示</p>
+												<p>27、推送技术：长连接（Websocke服务）</p>
+												<p>28、高并发保护/防雪崩技术：流量控制、熔断器组件、黑白名单、缓存、服务降级</p>
+												<p>29、报表定义系统、自定义报表封装（JasperReport + ireport） 、 ECharts后端接口封装</p>
+												<p>30、帮助中心：CMS后台管理 + ueditor在线编辑器 + FreeMarker静态化发布 + Lucene全文检索</p>
+												<p>31、国际化，多语种，多币种技术</p>
+												<p>32、异常封装（自定义异常，统一抛出捕获）</p>
+												<p>33、乐观锁、悲观锁、分布式锁</p>
+												<p>34、敏感信息处理：对称加密解密；密码信息处理：非对称加密；日志敏感信息监控</p>
+												<p>35、重复提交处理（自定义注解、token验证）</p>
+												<p>36、Session共享（redis、线程ThreadLocal）</p>
+												<p>37、分布式版本控制：Git；文档版本控制：SVN</p>
+												<p>38、项目与事务跟踪：JIRA</p>
+												<p>39、企业知识管理与协同：Confluence</p>
+												<p>40、数据建模工具：ERWin、PowerDesigner</p>
+												<p>41、原型设计：Axure</p>
+												<p>42、基础设施服务、DNS智能解析：阿里云、Ucloud、腾讯云</p>
+												<p>43、DevOps：持续开发(Git\Maven\ Nexus)、持续测试(Selenium+Python\Junit\ Postman\ Appium)、持续集成(Jenkins)、持续部署(Puppet\Chef\SaltStack\Ansible\ Docker + Kubernetes)、持续监控(Zabbix + Supervisor)、回退演习、故障演练</p>
+												<p>44、性能测试：JMeter（数据库压测、接口压测）、Loadrunner分布式压测</p>
+												<p>45、Nginx 反向代理 + SSL</p>
+												<p>46、统一代码注释及copyright（JavaDoc + Markdown），Lombok，API文档框架（Apidoc\Swagger2）</p>
+												<p>47、代码检查：checkstyle、Findbug、P3C</p>
+												<p>48、代码自动生成：FreeMarker（模板引擎）</p>
+												<p>49、JavaEE开发工具：Eclipse\Intellij + Jrebel</p>
                     </li>
                     <li>
                         <h3>北京数码易知科技发展有限责任公司 | CTO、架构师 | 2013/06 -- 2016/09</h3>
